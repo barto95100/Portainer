@@ -689,6 +689,41 @@
 		},
 		{
 			"categories": [
+				"HomeAutomation",
+				"Management"
+			],
+			"description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "nodered/node-red-docker:latest",
+			"logo": "https://silanus.fr/sin/wp-content/uploads/2018/02/node-red-icon.png",
+			"name": "Node-RED",
+			"platform": "linux",
+			"ports": [
+				"1880:1880/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Domoticz",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/NodeRed",
+					"container": "/data"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
