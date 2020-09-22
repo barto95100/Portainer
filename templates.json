@@ -713,7 +713,7 @@
 				"1880:1880/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Domoticz",
+			"title": "NodeRED",
 			"type": 1,
 			"volumes": [
 				{
