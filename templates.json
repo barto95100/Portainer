@@ -5,9 +5,7 @@
 			"type": 3,
 			"title": "duplicati",
 			"name": "duplicati",
-			"categories": [
-				"test"
-			],
+			"categories": ["test"],
 			"description": "duplicati",
 			"logo": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Images/duplicati-icon.png",
 			"env": [
@@ -47,9 +45,7 @@
 			"type": 3,
 			"title": "Dashy",
 			"name": "Dashy",
-			"categories": [
-				"test"
-			],
+			"categories": ["test"],
 			"description": "Dashy",
 			"logo": "https://dashy.to/img/dashy.png",
 			"env": [
@@ -79,9 +75,7 @@
 			"type": 3,
 			"title": "esphome",
 			"name": "esphome",
-			"categories": [
-				"test"
-			],
+			"categories": ["test"],
 			"description": "esphome",
 			"logo": "https://cdn.icon-icons.com/icons2/3914/PNG/512/esphome_logo_icon_248927.png",
 			"env": [
@@ -119,9 +113,7 @@
 			"type": 3,
 			"title": "go2rtc",
 			"name": "go2rtc",
-			"categories": [
-				"test"
-			],
+			"categories": ["test"],
 			"description": "go2rtc",
 			"env": [
 				{
@@ -150,9 +142,7 @@
 			"type": 3,
 			"title": "grafana",
 			"name": "grafana",
-			"categories": [
-				"test"
-			],
+			"categories": ["test"],
 			"description": "grafana",
 			"logo": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Grafana_logo.png?20170804201233",
 			"env": [
@@ -182,9 +172,7 @@
 			"type": 3,
 			"title": "guacamole",
 			"name": "guacamole",
-			"categories": [
-				"test"
-			],
+			"categories": ["test"],
 			"description": "guacamole",
 			"logo": "https://upload.wikimedia.org/wikipedia/commons/3/31/Apache_Guacamole_logo.png",
 			"env": [
@@ -214,9 +202,7 @@
 			"type": 3,
 			"title": "influxdb2",
 			"name": "influxdb2",
-			"categories": [
-				"test"
-			],
+			"categories": ["test"],
 			"description": "influxdb2",
 			"logo": "https://www.niagaramarketplace.com/media/catalog/product/cache/f7420c7cfd302c73440e50c5a6066c3c/m/a/marketplace_icons_13_.png",
 			"env": [
@@ -246,9 +232,7 @@
 			"type": 3,
 			"title": "mariadb",
 			"name": "mariadb",
-			"categories": [
-				"test"
-			],
+			"categories": ["test"],
 			"description": "mariadb",
 			"logo": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Images/mariadb-icon.png",
 			"env": [
@@ -308,21 +292,19 @@
 			"type": 3,
 			"title": "zoraxy",
 			"name": "zoraxy",
-			"categories": [
-				"test"
-			],
+			"categories": ["test"],
 			"description": "zoraxy",
 			"logo": "https://www.myqnap.org/wp-content/uploads/zoraxy-logo.png",
 			"env": [
 				{
 					"label": "port",
 					"name": "port",
-					"default": "8000"
+					"default": "8001"
 				},
 				{
 					"label": "name_container",
 					"name": "name_container",
-					"default": "zoraxy-v3.0.3-dns-challenge"
+					"default": "zoraxy"
 				},
 				{
 					"label": "folder",
