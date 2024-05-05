@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  zoraxy-docker:
+    image: ghcr.io/barto95100/zoraxy-dns-challenge:v3.0.3
+    container_name: zoraxy-v3.0.3-dns-challenge
+    ports:
+      - 80:80
+      - 443:443
+      - 8000:8000
+    volumes:
+      - /docker/zoraxy-dns-challenge/conf:/opt/zoraxy/config/
+    environment:
+      ARGS: '-fastgeoip=true'
