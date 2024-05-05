@@ -291,9 +291,9 @@
 		{
 			"type": 3,
 			"title": "zoraxy",
-			"name": "zoraxy",
+			"name": "zoraxy-dns-challenge-template",
 			"categories": ["test"],
-			"description": "zoraxy",
+			"description": "Reverse Proxy",
 			"logo": "https://www.myqnap.org/wp-content/uploads/zoraxy-logo.png",
 			"env": [
 				{
