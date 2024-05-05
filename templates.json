@@ -315,7 +315,7 @@
 			"platform": "linux",
 			"repository": {
 				"stackfile": "zoraxy/docker-compose.yml",
-				"url": "https://github.com/fredarro/template-portainer"
+				"url": "https://github.com/barto95100/portainer"
 			}
 		}
 	]
