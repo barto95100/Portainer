@@ -328,7 +328,7 @@
 					"label": "folder",
 					"name": "folder",
 					"default": "/home/docker/zoraxy"
-				},
+				}
 			],
 			"platform": "linux",
 			"repository": {
