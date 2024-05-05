@@ -299,17 +299,17 @@
 				{
 					"label": "port",
 					"name": "port",
-					"default": "8001"
+					"default": "8000"
 				},
 				{
 					"label": "name_container",
 					"name": "name_container",
-					"default": "zoraxy"
+					"default": "zoraxy-dns-challenge-template"
 				},
 				{
 					"label": "folder",
 					"name": "folder",
-					"default": "/home/docker/zoraxy"
+					"default": "/home/docker/zoraxy-dns-challenge-template"
 				}
 			],
 			"platform": "linux",
