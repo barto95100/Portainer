@@ -9,4 +9,3 @@ services:
       - /etc/localtime:/etc/localtime:ro
     ports:
       - ${ports}:8888
-# test
