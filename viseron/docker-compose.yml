@@ -1,0 +1,11 @@
+version: "2.4"
+services:
+  viseron:
+    image: roflcoopter/viseron:latest
+    container_name: viseron 
+    volumes:
+      - ${dossier}/recordings:/recordings
+      - ${dossier}/config:/config
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - ${ports}:8888

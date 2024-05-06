@@ -317,6 +317,41 @@
 				"stackfile": "zoraxy/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
+		},
+		{
+			"type": 3,
+			"title": "viseron",
+			"name": "viseron",
+			"categories": ["Vidéo"],
+			"description": "Viseron est un NVR auto-hébergé, uniquement en local, implémenté en Python. L'objectif est la facilité d'utilisation tout en tirant parti de l'accélération matérielle pour une charge système minimale ",
+			"logo": "hhttps://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/viseron.svg",
+			"env": [
+				{
+					"label": "port",
+					"name": "port",
+					"default": "8888"
+				},
+				{
+					"label": "name_container",
+					"name": "name_container",
+					"default": "viseron"
+				},
+				{
+					"label": "dossier",
+					"name": "dossier",
+					"default": "/home/docker/viseron/recordings"
+				},
+				{
+					"label": "dossier",
+					"name": "dossier",
+					"default": "/home/docker/viseron/config"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "zoraxy/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
 		}
 	]
 }
