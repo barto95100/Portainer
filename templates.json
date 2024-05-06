@@ -452,7 +452,7 @@
 					"label": "Token",
 					"name": "token",
 					"default": null,
-					"description": "Token généré grace a la commande: echo -n "MotDePasse" | argon2 "$(openssl rand -base64 32)" -e -id -k 65540 -t 3 -p 4"
+					"description": "Token généré grace à la commande: docker run --rm -it vaultwarden/server /vaultwarden hash"
 				},
 				{
 					"label": "SMTP server",
