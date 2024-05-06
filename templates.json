@@ -451,7 +451,7 @@
 				{
 					"label": "Token",
 					"name": "token",
-					"description": "Token généré grace à la commande: docker run --rm -it vaultwarden/server /vaultwarden hash",
+					"description": "Token généré grace à la commande: docker run --rm -it vaultwarden/server /vaultwarden hash"
 				},
 				{
 					"label": "SMTP server",
@@ -480,11 +480,11 @@
 				},
 				{
 					"label": "SMTP Username",
-					"name": "smtp_username",
+					"name": "smtp_username"
 				},
 				{
 					"label": "SMTP Passsord",
-					"name": "smtp_password",
+					"name": "smtp_password"
 				},
 				{
 					"label": "Dossier persistant",
