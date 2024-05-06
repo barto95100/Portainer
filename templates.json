@@ -355,31 +355,41 @@
 		},
 		{
 			"type": 3,
-			"title": "Authelia",
-			"name": "Authelia",
+			"title": "Pi-Hole",
+			"name": "Pi-Hole",
 			"categories": ["Sécurité"],
-			"description": "Authelia est un serveur d'authentification open-source proposant une authentification unique ou à deux facteurs à la demande.",
-			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/authelia.svg",
+			"description": "Pi-Hole est un DNS « sinkhole », comprendre « entonnoir ». Il va utiliser les requêtes DNS faites par vos appareils pour valider ou non le trafic et ainsi vous mettre à l’abri des adresses et domaines connus comme diffusant de la pub, des malwares, etc.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/pi-hole.svg",
 			"env": [
 				{
 					"label": "port",
 					"name": "port",
-					"default": "9091"
+					"default": "80"
 				},
 				{
 					"label": "name_container",
 					"name": "name_container",
-					"default": "authelia"
+					"default": "pi-hole"
 				},
 				{
 					"label": "dossier",
 					"name": "dossier",
-					"default": "/home/docker/authelia/config"
+					"default": "/home/docker/pi-hole/etc-pihole"
+				},
+				{
+					"label": "dossier",
+					"name": "dossier",
+					"default": "/home/docker/pi-hole/etc-dnsmasq.d"
+				},
+				{
+					"label": "mot_de_passe",
+					"name": "mot_de_passe",
+					"default": null
 				}
 			],
 			"platform": "linux",
 			"repository": {
-				"stackfile": "authelia/docker-compose.yml",
+				"stackfile": "pi-hole/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
 		}
