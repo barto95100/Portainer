@@ -490,7 +490,7 @@
 					"default": null
 				},
 				{
-					"label": "dossier",
+					"label": "Dossier persistant",
 					"name": "dossier",
 					"default": "/home/docker/vaultwaarden/data"
 				}
