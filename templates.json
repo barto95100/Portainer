@@ -423,6 +423,82 @@
 				"stackfile": "adguard/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
+		},
+		{
+			"type": 3,
+			"title": "Vaulwarden",
+			"name": "Vaulwarden",
+			"categories": ["Sécurité"],
+			"description": "Vaultwarden est un gestionnaire de mot de passe gratuit, OpenSource et SelfHosted basé sur [Bitwarden](https://bitwarden.com/).",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/vaultwarden.svg",
+			"env": [
+				{
+					"label": "Nom du container",
+					"name": "nom_container",
+					"default": "vaultwarden"
+				},
+				{
+					"label": "Domaine",
+					"name": "domaine",
+					"default": "https://subdomain.yourdomain.com",
+					"description": "Indiquer l'URL que vous désirer pour joindre Vaultwarden"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "8090"
+				},
+				{
+					"label": "Token",
+					"name": "token",
+					"default": "8090"
+				},
+				{
+					"label": "SMTP server",
+					"name": "smtp_server",
+					"default": "smtp.gmail.com"
+				},
+				{
+					"label": "SMTP from",
+					"name": "smtp_from",
+					"default": "vaultwarden@youdomain.com"
+				},
+				{
+					"label": "SMTP from name",
+					"name": "smtp_from_name",
+					"default": "Vaultwarden"
+				},
+				{
+					"label": "SMTP Sécurité",
+					"name": "smtp_Security",
+					"default": "SECURITYMETHOD"
+				},
+				{
+					"label": "SMTP Port",
+					"name": "smtp_port",
+					"default": "587"
+				},
+				{
+					"label": "SMTP Username",
+					"name": "smtp_username",
+					"default": null
+				},
+				{
+					"label": "SMTP Passsord",
+					"name": "smtp_password",
+					"default": null
+				},
+				{
+					"label": "dossier",
+					"name": "dossier",
+					"default": "/home/docker/vaultwaarden/data"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "vaultwarden/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
 		}
 	]
 }

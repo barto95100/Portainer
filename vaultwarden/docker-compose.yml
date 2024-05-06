@@ -1,0 +1,33 @@
+version: '3'
+services:
+  vaultwarden:
+    container_name: ${nom_container}
+    image: vaultwarden/server:latest
+    restart: unless-stopped
+    volumes:
+      - ${dossier}/data/:/data/
+    ports:
+      - ${port}:80
+    environment:
+      - DOMAIN=${domaine}
+      - LOGIN_RATELIMIT_MAX_BURST=10
+      - LOGIN_RATELIMIT_SECONDS=60
+      - ADMIN_RATELIMIT_MAX_BURST=10
+      - ADMIN_RATELIMIT_SECONDS=60
+      - ADMIN_TOKEN=${token}
+      - SENDS_ALLOWED=true
+      - EMERGENCY_ACCESS_ALLOWED=true
+      - WEB_VAULT_ENABLED=true
+      - SIGNUPS_ALLOWED=false
+      - SIGNUPS_VERIFY=true
+      - SIGNUPS_VERIFY_RESEND_TIME=3600
+      - SIGNUPS_VERIFY_RESEND_LIMIT=5
+      #- SIGNUPS_DOMAINS_WHITELIST=yourdomainhere.com,anotherdomain.com
+      - SMTP_HOST=${smtp_server}
+      - SMTP_FROM=${smtp_from}
+      - SMTP_FROM_NAME=${smtp_from_name}
+      - SMTP_SECURITY=${smtp_Security}
+      - SMTP_PORT=${smtp_port}
+      - SMTP_USERNAME=${smtp_username}
+      - SMTP_PASSWORD=${smtp_password}
+      #- SMTP_AUTH_MECHANISM="Mechanism"
