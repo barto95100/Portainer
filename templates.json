@@ -367,8 +367,8 @@
 					"default": "80"
 				},
 				{
-					"label": "name_container",
-					"name": "name_container",
+					"label": "nom_container",
+					"name": "Nom container",
 					"default": "pi-hole"
 				},
 				{
@@ -383,7 +383,7 @@
 				},
 				{
 					"label": "mot_de_passe",
-					"name": "mot_de_passe",
+					"name": "mot de passe",
 					"default": null
 				}
 			],
