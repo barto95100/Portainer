@@ -1,7 +1,7 @@
 version: "3"
 services:
   pihole:
-    container_name: ${nom container}
+    container_name: ${nom_container}
     image: pihole/pihole:latest
     ports:
       - "53:53/tcp"
@@ -9,7 +9,7 @@ services:
       - "${port}:80/tcp"
     environment:
       TZ: 'Europe/Paris'
-      WEBPASSWORD: ${mot de passe}
+      WEBPASSWORD: ${mot_de_passe}
     volumes:
       - ${dossier}/etc-pihole:/etc/pihole'
       - ${dossier}/etc-dnsmasq.d:/etc/dnsmasq.d'
