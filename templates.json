@@ -450,8 +450,7 @@
 				},
 				{
 					"label": "Token",
-					"name": "token",
-					"description": "Token généré grace à la commande: docker run --rm -it vaultwarden/server /vaultwarden hash"
+					"name": "token"
 				},
 				{
 					"label": "SMTP server",
