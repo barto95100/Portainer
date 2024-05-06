@@ -450,7 +450,9 @@
 				},
 				{
 					"label": "Token",
-					"name": "token"
+					"name": "token",
+					"description": "Token généré grace à la commande: docker run --rm -it vaultwarden/server /vaultwarden hash",
+					"default": null
 				},
 				{
 					"label": "SMTP server",
@@ -490,7 +492,7 @@
 				{
 					"label": "Dossier persistant",
 					"name": "dossier",
-					"default": "/home/docker/vaultwaarden/data"
+					"default": "/home/docker/vaultwarden/data"
 				}
 			],
 			"platform": "linux",
