@@ -384,7 +384,8 @@
 				{
 					"label": "mot de passe",
 					"name": "mot_de_passe",
-					"default": null
+					"default": null,
+					"description": "Mot de passe de connexion a l'interface de Pi-hole"
 				}
 			],
 			"platform": "linux",
