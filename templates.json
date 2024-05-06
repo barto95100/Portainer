@@ -367,8 +367,8 @@
 					"default": "80"
 				},
 				{
-					"label": "nom_container",
-					"name": "Nom container",
+					"label": "nom container",
+					"name": "nom container",
 					"default": "pi-hole"
 				},
 				{
@@ -382,7 +382,7 @@
 					"default": "/home/docker/pi-hole/etc-dnsmasq.d"
 				},
 				{
-					"label": "mot_de_passe",
+					"label": "mot de passe",
 					"name": "mot de passe",
 					"default": null
 				}
