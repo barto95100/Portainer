@@ -320,9 +320,9 @@
 		},
 		{
 			"type": 3,
-			"title": "viseron",
-			"name": "viseron",
-			"categories": ["Vidéo"],
+			"title": "Viseron",
+			"name": "Viseron",
+			"categories": ["Sécurité","Vidéo"],
 			"description": "Viseron est un NVR auto-hébergé, uniquement en local, implémenté en Python. L'objectif est la facilité d'utilisation tout en tirant parti de l'accélération matérielle pour une charge système minimale ",
 			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/viseron.svg",
 			"env": [
@@ -349,7 +349,37 @@
 			],
 			"platform": "linux",
 			"repository": {
-				"stackfile": "zoraxy/docker-compose.yml",
+				"stackfile": "viseron/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
+		},
+		{
+			"type": 3,
+			"title": "Authelia",
+			"name": "Authelia",
+			"categories": ["Sécurité"],
+			"description": "Authelia est un serveur d'authentification open-source proposant une authentification unique ou à deux facteurs à la demande.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/authelia.svg",
+			"env": [
+				{
+					"label": "port",
+					"name": "port",
+					"default": "9091"
+				},
+				{
+					"label": "name_container",
+					"name": "name_container",
+					"default": "authelia"
+				},
+				{
+					"label": "dossier",
+					"name": "dossier",
+					"default": "/home/docker/authelia/config"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "authelia/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
 		}
