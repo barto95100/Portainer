@@ -529,7 +529,7 @@
 			"name": "Diun",
 			"categories": ["Supervision"],
 			"description": "DIUN (Docker Image Update Notifier) est une application CLI écrite en Go et livrée en un seul exécutable (et une image Docker) pour recevoir des notifications lorsqu'une image Docker est mise à jour sur un registre Docker.",
-			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/diun.svg",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/diun.png",
 			"env": [
 				{
 					"label": "nom container",
