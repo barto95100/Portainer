@@ -393,6 +393,36 @@
 				"stackfile": "pi-hole/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
+		},
+		{
+			"type": 3,
+			"title": "Adguard",
+			"name": "Adguard",
+			"categories": ["Sécurité"],
+			"description": "Bloque toutes sortes de publicités Élimine des élements web agaçants Économise le trafic et accélère le chargement des pages Fonctionne dans les navigateurs et les applications Conserve la fonctionnalité et l'ésthétique des sites web",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/adguard-home.svg",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "pi-hole"
+				},
+				{
+					"label": "dossier",
+					"name": "dossier",
+					"default": "/home/docker/adguard/work"
+				},
+				{
+					"label": "dossier",
+					"name": "dossier",
+					"default": "/home/docker/adguard/config"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "adguard/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
 		}
 	]
 }
