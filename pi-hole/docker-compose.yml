@@ -8,9 +8,9 @@ services:
       - "53:53/udp"
       - "${port}:80/tcp"
     environment:
-      TZ: 'Europe/Paris'
+      TZ: Europe/Paris
       WEBPASSWORD: ${mot_de_passe}
     volumes:
-      - ${dossier}/etc-pihole:/etc/pihole'
-      - ${dossier}/etc-dnsmasq.d:/etc/dnsmasq.d'
+      - ${dossier}/etc-pihole:/etc/pihole
+      - ${dossier}/etc-dnsmasq.d:/etc/dnsmasq.d
     restart: unless-stopped
