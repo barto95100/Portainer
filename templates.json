@@ -451,7 +451,6 @@
 				{
 					"label": "Token",
 					"name": "token",
-					"default": null,
 					"description": "Token généré grace à la commande: docker run --rm -it vaultwarden/server /vaultwarden hash"
 				},
 				{
