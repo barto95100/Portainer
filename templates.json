@@ -339,12 +339,12 @@
 				{
 					"label": "dossier",
 					"name": "dossier",
-					"default": "/home/docker/viseron/recordings"
+					"default": "/home/docker/viseron"
 				},
 				{
 					"label": "dossier",
 					"name": "dossier",
-					"default": "/home/docker/viseron/config"
+					"default": "/home/docker/viseron"
 				}
 			],
 			"platform": "linux",
@@ -374,12 +374,12 @@
 				{
 					"label": "dossier",
 					"name": "dossier",
-					"default": "/home/docker/pi-hole/etc-pihole"
+					"default": "/home/docker/pi-hole"
 				},
 				{
 					"label": "dossier",
 					"name": "dossier",
-					"default": "/home/docker/pi-hole/etc-dnsmasq.d"
+					"default": "/home/docker/pi-hole"
 				},
 				{
 					"label": "mot de passe",
@@ -410,12 +410,12 @@
 				{
 					"label": "dossier",
 					"name": "dossier",
-					"default": "/home/docker/adguard/work"
+					"default": "/home/docker/adguard"
 				},
 				{
 					"label": "dossier",
 					"name": "dossier",
-					"default": "/home/docker/adguard/config"
+					"default": "/home/docker/adguard"
 				}
 			],
 			"platform": "linux",
@@ -489,7 +489,7 @@
 				{
 					"label": "Dossier persistant",
 					"name": "dossier",
-					"default": "/home/docker/vaultwarden/data"
+					"default": "/home/docker/vaultwarden"
 				}
 			],
 			"platform": "linux",
@@ -512,14 +512,39 @@
 					"default": "dozzle"
 				},
 				{
-					"label": "Port",
-					"name": "port",
-					"default": "8080"
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/dozzle/"
 				}
 			],
 			"platform": "linux",
 			"repository": {
-				"stackfile": "adguard/docker-compose.yml",
+				"stackfile": "dozzle/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
+		},
+		{
+			"type": 3,
+			"title": "Diun",
+			"name": "Diun",
+			"categories": ["Supervision"],
+			"description": "DIUN (Docker Image Update Notifier) est une application CLI écrite en Go et livrée en un seul exécutable (et une image Docker) pour recevoir des notifications lorsqu'une image Docker est mise à jour sur un registre Docker.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/diun.svg",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "diun"
+				},
+				{
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/diun"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "diun/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
 		}
