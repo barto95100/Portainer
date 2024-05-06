@@ -497,6 +497,31 @@
 				"stackfile": "vaultwarden/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
+		},
+		{
+			"type": 3,
+			"title": "Dozzle",
+			"name": "Dozzle",
+			"categories": ["Supervision"],
+			"description": "Dozzle est une petite application légère avec une interface Web pour surveiller les journaux Docker.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/dozzle.svg",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "dozzle"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "8080"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "adguard/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
 		}
 	]
 }
