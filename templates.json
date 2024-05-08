@@ -6,7 +6,7 @@
 			"title": "Duplicati",
 			"name": "Duplicati",
 			"categories": ["Sauvegarde"],
-			"description": "dLogiciel de sauvegarde gratuit pour stocker des sauvegardes cryptées en ligne ou en local.",
+			"description": "C'est une solution de sauvegarde gratuit pour stocker des sauvegardes cryptées en ligne ou en local.",
 			"logo": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Images/duplicati-icon.png",
 			"env": [
 				{
