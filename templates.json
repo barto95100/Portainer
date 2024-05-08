@@ -854,6 +854,91 @@
 				"stackfile": "zigbee2mqtt/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
+		},
+		{
+			"type": 3,
+			"title": "Mosquitto",
+			"name": "Mosquitto",
+			"categories": ["Protocole"],
+			"description": "Mosquitto est le broker le plus souvent utilisé pour les projets ESP8266 (Arduino et Raspberry). Lancé en 2008, il est disponible sur toutes les plateformes (MacOS, Windows XP-10, Linux).",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/eclipse-mosquitto.png",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "mosquitto"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "1883"
+				},
+				{
+					"label": "Websocket",
+					"name": "websocket",
+					"default": "9091"
+				},
+				{
+					"label": "Dossier config",
+					"name": "dossier_config",
+					"default": "/home/docker/mosquitto"
+				},
+				{
+					"label": "Dossier data",
+					"name": "dossier_data",
+					"default": "/home/docker/mosquitto"
+				},
+				{
+					"label": "Dossier log",
+					"name": "dossier_log",
+					"default": "/home/docker/mosquitto"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "mosquitto/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
+		},
+		{
+			"type": 3,
+			"title": "Emqx",
+			"name": "Emqx",
+			"categories": ["Protocole"],
+			"description": "EMQX est un éditeur de logiciels d'infrastructure de données IdO open source et évolutifs qui propose l'une des plateformes de messagerie MQTT (EMQX) avec base de données de streaming les plus évolutives et les plus fiables au monde pour les scénarios IoT critiques.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/emqx.png",
+			"env": [
+				{
+					"label": "Nom du container",
+					"name": "nom_container",
+					"default": "emqx"
+				},
+				{
+					"label": "Port d'écoute",
+					"name": "port_listener",
+					"default": "1883"
+				},
+				{
+					"label": "Port d'écoute securisé",
+					"name": "port_listener_ssl",
+					"default": "8883"
+				},
+				{
+					"label": "Port websocket",
+					"name": "port_listener_websocket",
+					"default": "8083"
+				},
+				{
+					"label": "Port websocket securisé",
+					"name": "port_listener_websocket_secure",
+					"default": "8084"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "emqx/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
 		}
 	]
 }

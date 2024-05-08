@@ -1,0 +1,17 @@
+version: '2' 
+services: 
+  eclipse-mosquitto: 
+    container_name: ${nom_container}
+    image: eclipse-mosquitto
+    ports:
+      - ${port}:1883
+      - ${websocket}:9001
+    volumes:
+      - ${dossier_config}/config:/mosquitto/config
+      - ${dossier_data}/data:/mosquitto/data
+      - ${dossier_log}/log:/mosquitto/log
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+    restart: always

@@ -1,0 +1,18 @@
+version: '3'
+services:
+  emqx1:
+    image: emqx:latest
+    container_name: ${nom_container}
+    ports:
+      - ${port_listener}:1883
+      - ${port_listener_ssl}:8883
+      - ${port_listener_websocket}:8083
+      - ${port_listener_websocket_secure}:8084
+    volumes:
+       - ${dossier_data}/data:/opt/emqx/data*
+       - ${dossier_etc}/etc:/opt/emqx/etc
+       - ${dossier_log}/log:/opt/emqx/log
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
