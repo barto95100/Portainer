@@ -3,42 +3,37 @@
 	"templates": [
 		{
 			"type": 3,
-			"title": "duplicati",
-			"name": "duplicati",
-			"categories": ["test"],
-			"description": "duplicati",
+			"title": "Duplicati",
+			"name": "Duplicati",
+			"categories": ["Sauvegarde"],
+			"description": "dLogiciel de sauvegarde gratuit pour stocker des sauvegardes cryptées en ligne ou en local.",
 			"logo": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Images/duplicati-icon.png",
 			"env": [
 				{
-					"label": "port",
+					"label": "Port",
 					"name": "port",
 					"default": "8200"
 				},
 				{
-					"label": "name_container",
-					"name": "name_container",
+					"label": "Nom du container",
+					"name": "nom_container",
 					"default": "duplicati"
 				},
 				{
-					"label": "folder",
-					"name": "folder",
+					"label": "Dossier config",
+					"name": "dossier_config",
 					"default": "/home/docker/duplicati"
 				},
 				{
-					"label": "source",
-					"name": "source",
-					"default": "/home/docker"
-				},
-				{
-					"label": "TZ",
-					"name": "TZ",
-					"default": "Europe/Paris"
+					"label": "Dossier backup",
+					"name": "dossier_backup",
+					"default": "/home/docker/duplicati"
 				}
 			],
 			"platform": "linux",
 			"repository": {
 				"stackfile": "duplicati/docker-compose.yml",
-				"url": "https://github.com/fredarro/compose"
+				"url": "https://github.com/barto95100/portainer"
 			}
 		},
 		{
@@ -745,6 +740,151 @@
 			"platform": "linux",
 			"repository": {
 				"stackfile": "vs-code/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
+		},
+		{
+			"type": 3,
+			"title": "Homepage",
+			"name": "Homepage",
+			"categories": ["Dashboard"],
+			"description": "Tableau de bord d'application moderne (entièrement statique, rapide), sécurisé et hautement personnalisable avec des intégrations pour plus de 25 services et des traductions pour plus de 15 langues.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/homepage.png",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "homepage"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "3002"
+				},
+				{
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/homepage"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "homepage/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
+		},
+		{
+			"type": 3,
+			"title": "Heimdall",
+			"name": "Heimdall",
+			"categories": ["Dashboard"],
+			"description": "Heimdall est un moyen d'organiser tous ces liens vers vos sites Web et applications Web les plus utilisés de manière simple. La simplicité est la clé de Heimdall.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/heimdall.png",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "heimdall"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "3003"
+				},
+				{
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/heimdall"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "heimdall/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
+		},
+		{
+			"type": 3,
+			"title": "PostgreSQL",
+			"name": "PostgreSQL",
+			"categories": ["Base de donnée"],
+			"description": "PostgreSQL est un système de gestion de base de données relationnelle et objet (SGBDRO). C'est un outil libre disponible selon les termes d'une licence de type BSD.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/93ab09fc0a7a0134a9274af73a572843c480163a/svg/postgres.svg",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "postgresql"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "8080"
+				},
+				{
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/postgresql"
+				},
+				{
+					"label": "Nom base de donnée",
+					"name": "db_name",
+					"default": "Indiquer le nom de la base de donnée"
+				},
+				{
+					"label": "Mot de passe",
+					"name": "db_password",
+					"default": "Infiquer le mot de passe d'accès à la base de donnée"
+				},
+				{
+					"label": "Utilisateur",
+					"name": "db_user",
+					"default": "Indiquer le nom d'utilisateur de la base de donnée"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "postgresql/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
+		},
+		{
+			"type": 3,
+			"title": "Plex media server",
+			"name": "Plex media server",
+			"categories": ["Multimédia"],
+			"description": "Plex analyse et organise vos fichiers comme par magie, les triant automatiquement et de manière intuitive dans votre bibliothèque Plex où ils sont parfaitement mis en valeur.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/93ab09fc0a7a0134a9274af73a572843c480163a/svg/plex.svg",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "plex"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "32400"
+				},
+				{
+					"label": "Dossier config",
+					"name": "dossier_config",
+					"default": "/home/docker/plex"
+				},
+				{
+					"label": "Dossier série TV",
+					"name": "dossier_serie_tv",
+					"default": "/home/docker/plex"
+				},
+				{
+					"label": "Dossier films",
+					"name": "dossier_films",
+					"default": "/home/docker/plex"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "plex/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
 		}
