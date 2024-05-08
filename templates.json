@@ -682,6 +682,71 @@
 				"stackfile": "dashy/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
+		},
+		{
+			"type": 3,
+			"title": "Node-Red",
+			"name": "Node-Red",
+			"categories": ["Dashboard"],
+			"description": "Conçu et construit par IBM, Node-RED est un outil de développement open-source et gratuit, basé sur une programmation visuelle, permettant de connecter des périphériques matériels, des API ou des services en ligne dans le cadre de l'Internet des objets.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/node-red.png",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "node-red"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "1880"
+				},
+				{
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/node-red"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "node-red/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
+		},		
+		{
+			"type": 3,
+			"title": "Code Server/Vs Code",
+			"name": "Code Server/Vs Code",
+			"categories": ["Dashboard"],
+			"description": "Exécutez code-server (VS code) sur n'importe quelle machine n'importe où et accédez-y dans le navigateur.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/93ab09fc0a7a0134a9274af73a572843c480163a/svg/vscode.svg",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "vs-code"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "8443"
+				},
+				{
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/vs-code"
+				},
+				{
+					"label": "Mot de passe",
+					"name": "hash_password",
+					"default": "indiquer_un_mot_de_passe"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "vs-code/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
 		}
 	]
 }

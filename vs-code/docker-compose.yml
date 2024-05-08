@@ -1,0 +1,16 @@
+version: "2.1"
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: ${nom_container}
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+      - HASHED_PASSWORD=${hash_password}
+      - DEFAULT_WORKSPACE=/config/workspace 
+    volumes:
+      - ${dossier}/config:/config
+    ports:
+      - ${port}:8443
+    restart: unless-stopped

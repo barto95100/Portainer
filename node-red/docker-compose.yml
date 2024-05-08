@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  node-red:
+    image: nodered/node-red:latest
+    container_name: ${nom_container}
+    restart: unless-stopped
+    user: "0"
+    privileged: true
+    environment:
+      - TZ=Europe/Paris
+    ports:
+      - ${port}:1880
+    volumes:
+      - ${dossier}/data:/data
