@@ -217,36 +217,6 @@
 		},
 		{
 			"type": 3,
-			"title": "zoraxy",
-			"name": "zoraxy-dns-challenge-template",
-			"categories": ["test"],
-			"description": "Reverse Proxy",
-			"logo": "https://www.myqnap.org/wp-content/uploads/zoraxy-logo.png",
-			"env": [
-				{
-					"label": "port",
-					"name": "port",
-					"default": "8000"
-				},
-				{
-					"label": "name_container",
-					"name": "name_container",
-					"default": "zoraxy-dns-challenge-template"
-				},
-				{
-					"label": "folder",
-					"name": "folder",
-					"default": "/home/docker/zoraxy-dns-challenge-template"
-				}
-			],
-			"platform": "linux",
-			"repository": {
-				"stackfile": "zoraxy/docker-compose.yml",
-				"url": "https://github.com/barto95100/portainer"
-			}
-		},
-		{
-			"type": 3,
 			"title": "Viseron",
 			"name": "Viseron",
 			"categories": ["Sécurité","Vidéo"],
