@@ -554,7 +554,7 @@
 			"name": "Speedtest",
 			"categories": ["Supervision"],
 			"description": "SpeedTest by OpenSpeedTest ™ est un outil d'estimation des performances du réseau en HTML5 gratuit et open source écrit en Vanilla Javascript et utilise uniquement des API Web intégrées telles que XMLHttpRequest (XHR), HTML, CSS, JS et SVG.",
-			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/diun.png",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/openspeedtest.png",
 			"env": [
 				{
 					"label": "nom container",
