@@ -567,6 +567,36 @@
 				"stackfile": "speedtest/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
+		},
+		{
+			"type": 3,
+			"title": "Uptime-Kuma",
+			"name": "Uptime-Kuma",
+			"categories": ["Supervision"],
+			"description": "Uptime Kuma est un service qui permet de faire de monitoring que se soit en local ou sur internet pour vos sites. Il dispose de sonde http(s), TCP, Ping, DNS, Push et même Steam Game Server, oui oui !",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/uptime-kuma.png",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "uptime-kuma"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "3001"
+				},
+				{
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/uptime-kuma"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "uptime-kuma/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
 		}
 	]
 }
