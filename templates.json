@@ -601,7 +601,7 @@
 		{
 			"type": 3,
 			"title": "Esphome",
-			"name": "Esphomea",
+			"name": "Esphome",
 			"categories": ["Protocole"],
 			"description": "ESPHome est un système pour contrôler votre ESP8266/ESP32 par des fichiers de configuration simples mais puissants et les contrôler à distance via des systèmes domotiques.",
 			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/esphome.png",
@@ -614,7 +614,7 @@
 				{
 					"label": "Port",
 					"name": "port",
-					"default": "30605201"
+					"default": "6052"
 				},
 				{
 					"label": "Dossier persistant",
@@ -625,6 +625,61 @@
 			"platform": "linux",
 			"repository": {
 				"stackfile": "esphome/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
+		},
+		{
+			"type": 3,
+			"title": "Excalidraw",
+			"name": "Excalidraw",
+			"categories": ["Dashboard"],
+			"description": "Excalidraw est une sorte de tableau blanc qui permet de tracer des diagrammes et infographies diverses en ligne et de façon collaborative. L'application est open source et le protocole est chiffré de bout en bout.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/excalidraw.png",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "excalidraw"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "3765"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "excalidraw/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
+		},
+		{
+			"type": 3,
+			"title": "Dashy",
+			"name": "Dashy",
+			"categories": ["Dashboard"],
+			"description": "Excalidraw est une sorte de tableau blanc qui permet de tracer des diagrammes et infographies diverses en ligne et de façon collaborative. L'application est open source et le protocole est chiffré de bout en bout.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/excalidraw.png",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "dashy"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "4000"
+				},
+				{
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/dashy"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "dashy/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
 		}
