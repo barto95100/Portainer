@@ -939,6 +939,41 @@
 				"stackfile": "emqx/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
+		},
+		{
+			"type": 3,
+			"title": "Zoraxy",
+			"name": "Zoraxy",
+			"categories": ["Sécurité"],
+			"description": "Zoraxy est un reverse proxy Web ecrit en Go, plusieur outils sont disponible, génération des certificat avec let's encrypt, ZeroSSL etc... Uptime kuma, console Web ssh tunnel et bien d'autre. A utiliser absolumenet !",
+			"logo": "https://zoraxy.arozos.com/img/icon.png",
+			"env": [
+				{
+					"label": "Nom du container",
+					"name": "nom_container",
+					"default": "zoraxy"
+				},
+				{
+					"label": "Port HTTP",
+					"name": "port_http",
+					"default": "80"
+				},
+				{
+					"label": "Port HTTPS",
+					"name": "port_https",
+					"default": "443"
+				},
+				{
+					"label": "Port d'administration",
+					"name": "port_admin",
+					"default": "8000"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "zoraxy/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
 		}
 	]
 }
