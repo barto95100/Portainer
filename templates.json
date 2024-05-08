@@ -819,6 +819,41 @@
 				"stackfile": "plex/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
+		},
+		{
+			"type": 3,
+			"title": "Zigbee2mqtt (Z2M)",
+			"name": "Zigbee2mqtt (Z2M)",
+			"categories": ["Protocole"],
+			"description": "Zigbee2MQTT, c’est un concept vraiment très intéressant. Il s’agit d’un **serveur passerelle** pour votre **protocole Zigbee**. En d’autres termes, **un serveur Zigbee2MQTT** va collecter les données de vos périphériques à l’aide d’un **sniffer Zigbee**",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/93ab09fc0a7a0134a9274af73a572843c480163a/svg/zigbee2mqtt.svg",
+			"env": [
+				{
+					"label": "nom container",
+					"name": "nom_container",
+					"default": "z2m"
+				},
+				{
+					"label": "Port",
+					"name": "port",
+					"default": "8081"
+				},
+				{
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/z2m"
+				},
+				{
+					"label": "Device",
+					"name": "device",
+					"default": "/dev/ttyACM0"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "zigbee2mqtt/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
 		}
 	]
 }

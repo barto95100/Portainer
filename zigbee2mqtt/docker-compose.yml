@@ -1,0 +1,18 @@
+version: '3'
+services:
+  zigbee2mqtt:
+    container_name: ${nom_container}
+    image: koenkk/zigbee2mqtt:latest
+    volumes:
+      - ${dossier}/data:/app/data
+      - /run/udev:/run/udev:ro
+    devices:
+      - ${device}:/dev/ttyACM0
+    restart: always
+    ports:
+      - ${port}:8080
+    privileged: true
+    environment:
+      - TZ=Europe/Paris
+    network_mode: bridge
+
