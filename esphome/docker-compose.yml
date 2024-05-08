@@ -1,0 +1,13 @@
+version: '3'
+service:
+  esphome:
+    container_name: ${nom_container}
+    image: esphome/esphome
+    volumes:
+      - ${dossier}/config:/config
+      - /etc/localtime:/etc/localtime:ro
+    restart: always
+    ports:
+      - ${port}:6052
+    privileged: true
+  
