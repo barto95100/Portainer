@@ -658,8 +658,8 @@
 			"title": "Dashy",
 			"name": "Dashy",
 			"categories": ["Dashboard"],
-			"description": "Excalidraw est une sorte de tableau blanc qui permet de tracer des diagrammes et infographies diverses en ligne et de façon collaborative. L'application est open source et le protocole est chiffré de bout en bout.",
-			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/excalidraw.png",
+			"description": "Dashy c’est un dashboard / page de démarrage qui s’installe sur votre serveur et qui vous permet d’organiser l’ensemble de vos services. Indispensable si vous vous autohébergez.",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/dashy.png",
 			"env": [
 				{
 					"label": "nom container",
