@@ -944,6 +944,61 @@
 				"stackfile": "zoraxy/docker-compose.yml",
 				"url": "https://github.com/barto95100/portainer"
 			}
+		},
+		{
+			"type": 3,
+			"title": "Nginx Proxy Manager (NPM)",
+			"name": "Nginx Proxy Manager (NPM)",
+			"categories": ["Sécurité"],
+			"description": "Nginx proxy manager (NPM) est un système de gestion de reverse proxy. L'outil est facile à configurer et ne nécessite pas connaissances approfondies sur Nginx ou les certificats SSL",
+			"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/93ab09fc0a7a0134a9274af73a572843c480163a/svg/nginx-proxy-manager.svg",
+			"env": [
+				{
+					"label": "Port HTTP",
+					"name": "port_http",
+					"default": "80"
+				},
+				{
+					"label": "Port HTTPS",
+					"name": "port_https",
+					"default": "443"
+				},
+				{
+					"label": "Port d'administration",
+					"name": "port_admin",
+					"default": "81"
+				},
+				{
+					"label": "Dossier persistant",
+					"name": "dossier",
+					"default": "/home/docker/npm"
+				},				
+				{
+					"label": "Utilisateur Base de donnée",
+					"name": "db_user",
+					"default": "npm"
+				},				
+				{
+					"label": "Mot de passe base de donnée",
+					"name": "db_password",
+					"default": "npm"
+				},				
+				{
+					"label": "Nom base de donnée",
+					"name": "db_name",
+					"default": "npm"
+				},
+				{
+					"label": "Mot de passe admin base de donnée",
+					"name": "db_password_admin",
+					"default": "npm"
+				}
+			],
+			"platform": "linux",
+			"repository": {
+				"stackfile": "nginx-proxy-manager/docker-compose.yml",
+				"url": "https://github.com/barto95100/portainer"
+			}
 		}
 	]
 }
